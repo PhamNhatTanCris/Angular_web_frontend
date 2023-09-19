@@ -1,0 +1,14 @@
+
+<form (submit)="showName2()">
+  <input type="text" name="name2" [formControl]="name2">
+  <input type="submit" value="Submit">
+</form>
+
+<form action="" [formGroup]="loginForm" (ngSubmit)="showName3()">
+  <p><input type="text" formControlName="username"></p>
+  <p><input type="password" formControlName="password"></p>
+  <button [disabled]="!loginForm.valid">Submit</button>
+  <button type="reset" (click)="loginForm.reset()">Reset</button>
+</form>
+<br>
+
