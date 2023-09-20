@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-manga {
+  margin: 10px 150px;
+  text-align: center;
+}
+
+.manga-intro {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.main-manga th, td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* .manga-btn {
+  border: none;
+} */
+

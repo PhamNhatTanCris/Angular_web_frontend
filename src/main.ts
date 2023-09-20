@@ -14,21 +14,14 @@ import { LoginFormComponent } from './app/login-form/login-form.component';
 import { AuthorListComponent } from './app/author-list/author-list.component';
 import { AuthorDetailComponent } from './app/author-detail/author-detail.component';
 import { ProgressBarComponent } from './app/progress-bar/progress-bar.component';
-
-const routes: Routes = [
-  {path: '', component: LoginFormComponent},
-  {path: 'note-list', component: NoteListComponent},
-  {path: 'add-note', component: AddNoteComponent},
-  {path: 'login-form', component: LoginFormComponent},
-  {path: 'author-list', component: AuthorListComponent},
-  {path: 'progress-bar', component: ProgressBarComponent},
-  {path: '**', component: AuthorDetailComponent},
-
-];
-
-bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes)],
-})
+import { HomeComponent } from './app/home/home.component';
+import { MangaComponent } from './app/manga/manga.component';
+import { AnimeComponent } from './app/anime/anime.component';
+import { IntroductComponent } from './app/introduct/introduct.component';
+import { ProductComponent } from './app/product/product.component';
+import { ServiceComponent } from './app/service/service.component';
+import { HeaderComponent } from './app/header/header.component';
+import { enableProdMode } from '@angular/core';
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

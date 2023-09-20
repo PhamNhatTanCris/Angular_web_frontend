@@ -1,0 +1,25 @@
+<div>
+  <table class="main-manga">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên truyện</th>
+        <th>Quốc gia</th>
+        <th>Thể loại</th>
+        <th>Năm sản xuất</th>
+        <th>Giới thiệu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of manga">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.country}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.year}}</td>
+        <td class="manga-intro">{{item.intro}}</td>
+        <td class="manga-btn"><button>Đọc truyện</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
