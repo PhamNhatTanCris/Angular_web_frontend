@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormControl, FormsModule } from '@angular/forms';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -19,6 +19,15 @@ import { AnimeComponent } from './anime/anime.component';
 import { IntroductComponent } from './introduct/introduct.component';
 import { ProductComponent } from './product/product.component';
 import { ServiceComponent } from './service/service.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignInComponent } from './sign-in/sign-in.component';
+
+
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button';
+import { SignInRfComponent } from './sign-in-rf/sign-in-rf.component';
 
 
 
@@ -40,6 +49,8 @@ import { ServiceComponent } from './service/service.component';
     IntroductComponent,
     ProductComponent,
     ServiceComponent,
+    SignInComponent,
+    SignInRfComponent,
     // HeaderComponent,
     //HeaderComponent,
     //AddNoteComponent,
@@ -53,6 +64,13 @@ import { ServiceComponent } from './service/service.component';
     FormsModule,
     LoginFormComponent,
     AddNoteComponent,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    ReactiveFormsModule
     // HeaderComponent,
     //AppComponent
 

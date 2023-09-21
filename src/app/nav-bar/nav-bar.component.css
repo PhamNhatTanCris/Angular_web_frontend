@@ -6,7 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.box {
+/* .box {
   border: 1px solid black;
   height: 100px;
   width: 100px;
@@ -24,7 +24,7 @@ input.ng-valid {
 
 input.ng-invalid{
   background-color: brown;
-}
+} */
 nav a{
   margin: 5px;
 }
@@ -46,6 +46,7 @@ a {
   left: 0;
   right: 0;
   height: 80px;
+  justify-content: space-between;
 }
 
 /* #nav-main>i,#nav-main>ul {
@@ -53,7 +54,7 @@ a {
 } */
 
 #nav-main i {
-  margin-right: 60px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
 }
@@ -116,10 +117,9 @@ a {
 
 }
 
-.input-form .form-view input{
-  margin-left: 10px;
-  padding: 5px 5px 5px 10px;
-  height: 30px;
+.input-form .form-view a{
+  margin-right: 20px;
+
 }
 
 .input-form .form-view button:hover{
@@ -130,7 +130,7 @@ a {
 }
 
 .input-form .form-view button{
-  margin-left: 10px;
+  margin-left: 0px;
   width: 100px;
   height: 30px;
   font-size: 16px;
@@ -196,6 +196,16 @@ input::placeholder{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.search-form-item:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-form-item .search-input:focus .search-form-item{
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
 }
 
 .search-form-item input {

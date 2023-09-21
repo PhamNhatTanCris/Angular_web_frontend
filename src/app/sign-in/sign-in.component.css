@@ -1,0 +1,29 @@
+.container {
+  margin-left: 60px;
+}
+
+input {
+  padding: 15px 5px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background-color: rgb(61, 104, 230) !important;
+  color: #fff !important;
+}
+
+button:hover {
+  background-color: rgb(85, 122, 234) !important;
+}
+
+.row-control-item {
+  margin-bottom: 10px;
+}
+
+.row-control span {
+  color: red;
+  font-size: 10px
+}
+
+
