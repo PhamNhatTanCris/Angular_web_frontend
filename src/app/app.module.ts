@@ -28,6 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { SignInRfComponent } from './sign-in-rf/sign-in-rf.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -51,6 +52,7 @@ import { SignInRfComponent } from './sign-in-rf/sign-in-rf.component';
     ServiceComponent,
     SignInComponent,
     SignInRfComponent,
+    RegisterComponent,
     // HeaderComponent,
     //HeaderComponent,
     //AddNoteComponent,

@@ -6,11 +6,10 @@ import { NgForm } from '@angular/forms';
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.css']
 })
-export class SignInComponent {
+export class SignInComponent{
   onSubmit(form: NgForm){
     console.log(form);
   }
-
   userInfor =
     {
       userName: "",

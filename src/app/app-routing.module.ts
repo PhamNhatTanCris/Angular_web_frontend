@@ -14,6 +14,7 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ServiceComponent } from './service/service.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignInRfComponent } from './sign-in-rf/sign-in-rf.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'service', component: ServiceComponent},
   {path:'sign-in', title:'sign-in form', component: SignInComponent},
   {path:'sign-in-rf', title:'sign-in form rf', component: SignInRfComponent},
+  {path:'register', title:'register form', component: RegisterComponent},
   {path: '**', component: AuthorDetailComponent},
 ];
 
