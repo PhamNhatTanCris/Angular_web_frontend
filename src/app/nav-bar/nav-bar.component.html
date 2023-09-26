@@ -1,11 +1,12 @@
-<div id="nav-main">
+
+<nav class="container">
   <i>
     <a href="#">
       <img src="./assets/Images/download.png" alt="logo">
     </a>
     <a href="">Freetrial4u</a>
   </i>
-  <ul>
+  <ul class="main-menu">
     <li>
       <a routerLink="/home">Trang chủ</a>
     </li>
@@ -20,18 +21,31 @@
     </li>
     <li>
       <a routerLink="/product">Sản phẩm</a>
+      <ul class="sub-menu">
+          <li><a href="">Truyện tranh</a></li>
+          <li><a href="">Hoạt hình</a></li>
+          <li><a href="">Phim</a>
+            <ul class="sub-menu-child">
+              <li><a href="">Tình cảm</a></li>
+              <li><a href="">Hành động</a></li>
+              <li><a href="">Kinh dị</a></li>
+            </ul>
+          </li>
+      </ul>
     </li>
     <li>
       <a routerLink="/service">Dịch vụ</a>
     </li>
   </ul>
+
   <div class="input-form">
     <form action="" class="form-view">
       <button type="submit" routerLink="sign-in">Đăng nhập</button>
       <a href="" routerLink="register">Đăng ký</a>
     </form>
   </div>
-</div>
+</nav>
+
 <div class="search-form">
   <form action="" class="search-form-item">
     <input class="search-input" type="text" placeholder="Tìm kiếm...">
@@ -39,6 +53,7 @@
       <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
     </a>
   </form>
-
-
 </div>
+
+
+
