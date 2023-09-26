@@ -17,6 +17,10 @@
   padding-top: 40px;
 }
 
+.content-footer h3, .content-footer-item h3 {
+  margin-bottom: 0;
+}
+
 .content-footer img {
   width: 90px;
   height: 30px;

@@ -5,13 +5,13 @@
     autocomplete="off"
     (ngSubmit)="formSubmit$.next(true)"
   >
-    <h2>Register</h2>
+    <h2 style="text-align: center; margin-top: 20px;">Register</h2>
     <div class="row-control">
       <mat-form-field appearance="outline">
         <mat-label>Username</mat-label>
         <input matInput placeholder="Username" formControlName="username" />
       </mat-form-field>
-      <pre>{{ registerForm.get("username")?.errors | json }}</pre>
+      <!-- <pre>{{ registerForm.get("username")?.errors | json }}</pre> -->
     </div>
     <div class="row-control">
       <mat-form-field appearance="outline">
@@ -23,7 +23,7 @@
           formControlName="password"
         />
       </mat-form-field>
-      <pre>{{ registerForm.get("password")?.errors | json }}</pre>
+      <!-- <pre>{{ registerForm.get("password")?.errors | json }}</pre> -->
     </div>
     <div class="row-control">
       <mat-form-field appearance="outline">
@@ -35,9 +35,9 @@
           formControlName="confirmPassword"
         />
       </mat-form-field>
-      <pre>{{ registerForm.get("confirmPassword")?.errors | json }}</pre>
+      <!-- <pre>{{ registerForm.get("confirmPassword")?.errors | json }}</pre> -->
     </div>
-    <div class="row-control row-actions">
+    <div style="text-align: center; margin-bottom: 30px;" class="row-control row-actions">
       <button
         mat-raised-button
         color="primary"
@@ -47,6 +47,6 @@
         Register
       </button>
     </div>
-    <pre>{{ registerForm.value | json }}</pre>
+    <!-- <pre>{{ registerForm.value | json }}</pre> -->
   </form>
 </div>
