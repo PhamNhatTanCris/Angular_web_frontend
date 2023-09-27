@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onScroll() {
-    this.isScrolled = (document.documentElement.scrollTop || document.body.scrollTop) > 100;
+    this.isScrolled = (document.documentElement.scrollTop || document.body.scrollTop) > 150;
   }
 
   scrollToTop() {

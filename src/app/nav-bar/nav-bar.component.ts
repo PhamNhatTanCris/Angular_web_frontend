@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
-export class NavBarComponent {
+export class NavBarComponent implements OnInit{
+  isScrolled!: boolean;
+  styleElement!: string;
+  ngOnInit(): void {
+    this.isScrolled = false;
+  }
   stringSearch ='';
 
   contentSearch(){
@@ -17,4 +22,17 @@ export class NavBarComponent {
       alert("Chưa nhập nội dung tìm kiếm!")
     }
   }
+
+  @HostListener('window: scroll', [])
+  onScroll(){
+    this.isScrolled = document.documentElement.scrollTop> 25;
+    if(this.isScrolled){
+      this.styleElement = 'opacity: 0.9;';
+    }
+    else{
+      this.styleElement = '';
+    }
+  }
+
+
 }

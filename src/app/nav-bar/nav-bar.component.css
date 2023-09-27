@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+#container {
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -23,24 +23,24 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-
+  z-index: 999;
+  justify-content: space-between;
 }
 
-.container > i img{
+#container > i img{
   width: 50px;
   height: 50px;
 }
 
-.container > i {
-  margin-right: 10%;
+#container > i {
+  /* margin-right: 10%; */
   margin-left: 10px;
   display: flex;
   align-items: center;
 
 }
 
-.container > i a {
+#container > i a {
   color: #8983FC;
   font-size: 26px;
 }
@@ -71,21 +71,21 @@ a {
   line-height: 50px;
 }
 
-.container>ul li:hover .sub-menu {
+#container>ul li:hover .sub-menu {
   display: block;
 }
 
 
-.container>ul li:hover .sub-menu li a{
+#container>ul li:hover .sub-menu li a{
   display: block;
   max-height: 50px;
 }
 
-.container>ul>li:hover {
+#container>ul>li:hover {
   background-color:  #f9f6f6;
 }
 
-.container>ul>li:hover>a {
+#container>ul>li:hover>a {
   background-color:  #f9f6f6;
   color: #8983FC;
   font-weight: 500;
@@ -119,7 +119,7 @@ a {
 }
 
 .input-form {
-  margin-left: 360px;
+  /* margin-left: 360px; */
 
 }
 
@@ -250,7 +250,7 @@ input::placeholder{
   cursor: pointer;
 }
 
-@media screen and (max-width: 1520px){
+@media screen and (max-width: 1021px){
   .search-form {
     margin-top: 160px;
   }
