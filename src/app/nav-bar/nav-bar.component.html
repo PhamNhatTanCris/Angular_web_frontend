@@ -48,8 +48,8 @@
 
 <div class="search-form">
   <form action="" class="search-form-item">
-    <input class="search-input" type="text" placeholder="Tìm kiếm...">
-    <a href="#">
+    <input class="search-input" type="text" placeholder="Tìm kiếm..." [(ngModel)]="stringSearch" name="stringSearch">
+    <a (click)="contentSearch()" style="cursor: pointer;">
       <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
     </a>
   </form>

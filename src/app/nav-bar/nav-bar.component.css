@@ -250,6 +250,12 @@ input::placeholder{
   cursor: pointer;
 }
 
+@media screen and (max-width: 1520px){
+  .search-form {
+    margin-top: 160px;
+  }
+
+}
 
 /* ========================== */
 

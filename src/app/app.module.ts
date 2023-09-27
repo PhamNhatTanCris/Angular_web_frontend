@@ -30,6 +30,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { SignInRfComponent } from './sign-in-rf/sign-in-rf.component';
 import { RegisterComponent } from './register/register.component';
 import { HomePagesComponent } from './pages/home-pages/home-pages.component';
+import { CdkCoercionComponent } from './cdk-coercion/cdk-coercion.component';
 
 
 
@@ -55,6 +56,7 @@ import { HomePagesComponent } from './pages/home-pages/home-pages.component';
     SignInRfComponent,
     RegisterComponent,
     HomePagesComponent,
+    CdkCoercionComponent,
     // HeaderComponent,
     //HeaderComponent,
     //AddNoteComponent,
